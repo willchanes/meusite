@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Minha Página Pessoal</title>
+  <style>
+    /* Estilização geral */
+    body {
+      background-color: #eedcce; /* cor suave */
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+
+    h1 {
+      color: #2e8b57; /* cor diferente */
+      text-align: center;
+    }
+
+    p {
+      font-size: 18px;
+      text-align: justify;
+    }
+
+    ul {
+      line-height: 2; /* espaçamento entre itens */
+    }
+
+    img {
+      border-radius: 10px;
+      width: 250px;
+      height: auto;
+      display: block;
+      margin: 10px 0;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+    }
+
+    table, th, td {
+      border: 1px solid #ccc;
+    }
+
+    td {
+      padding: 10px;
+      text-align: center;
+    }
+
+    a {
+      color: #0000ee;
+      text-decoration: none;
+    }
+
+    a:hover {
+      color: #ff4500; /* muda de cor ao passar o mouse */
+    }
+
+    #mensagem {
+      margin-top: 10px;
+      font-weight: bold;
+      color: #2f4f4f;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Willian Chanes</h1>
+
+  <p>
+    Olá, sou o Willian Chanes, tenho 33 anos e moro em Matão-SP. Sou um entusiasta por tecnologia, esportes de areia e jogos eletrônicos.
+  </p>
+
+  <button onclick="mostrarMensagem()">Clique para ver uma mensagem!</button>
+  <div id="mensagem"></div>
+
+  <h2>Meus Hobbies</h2>
+  <ul>
+    <li>Jogar Vôlei</li>
+    <li>Jogos de RPG</li>
+    <li>Academia</li>
+  </ul>
+
+  <img src="Imagens/volei.jpg" alt="Jogando Vôlei">
+
+  <h2>Países que gostaria de visitar</h2>
+  <table>
+    <tr>
+      <td>Finlândia</td>
+      <td><img src="Imagens/Finlandia.png" alt="Bandeira da Finlandia" width="100"></td>
+    </tr>
+    <tr>
+      <td>França</td>
+      <td><img src="Imagens/Franca.png" alt="Bandeira da França" width="100"></td>
+    </tr>
+    <tr>
+      <td>Japão</td>
+      <td><img src="Imagens/Japao.png" alt="Bandeira do Japão" width="100"></td>
+    </tr>
+  </table>
+
+  <p>
+    Acesse um site que gosto muito:  
+    <a href="https://www.crunchyroll.com/pt-br" target="_blank">Crunchyroll</a>
+  </p>
+
+  <script>
+    function mostrarMensagem() {
+      const divMensagem = document.getElementById('mensagem');
+      divMensagem.textContent = "Bem-vindos a minha página!";
+    }
+  </script>
+
+</body>
+</html>
